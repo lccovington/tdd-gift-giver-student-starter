@@ -3,7 +3,7 @@ class GiftExchange {
     static pairs(names) {
         try {
 
-            if(names.length % 2 !== 0) {throw "The number of names can not be odd"} ;
+            if(names.length % 2 !== 0) {throw new BadRequestError()};
 
             names = names.sort(() => Math.random() - 0.5)
 
