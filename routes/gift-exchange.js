@@ -9,5 +9,9 @@ module.exports = router;
 // })
 
 router.post('/pairs', function (req, res) {
-    res.send('About this wiki');
+    res.send('I work, I think');
+  })
+
+  router.post('/traditional', function (req, res) {
+    res.send('I also work, I think');
   })
